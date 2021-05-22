@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="LAN">
+        <item>"발열"</item>
+        <item>"오한"</item>
+        <item>"두통"</item>
+        <item>"기침"</item>
+    </string-array>
+</resources>

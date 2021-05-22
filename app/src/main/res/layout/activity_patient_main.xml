@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".PatientMainA">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usernumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toEndOf="@+id/usernumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="님"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/usernumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginTop="5dp"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+            android:id="@+id/usernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="20dp"
+            android:text="000001"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            tools:ignore="MissingConstraints"></TextView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3D0D0"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            tools:ignore="MissingConstraints"
+            android:layout_margin="6dp"
+            tools:layout_editor_absoluteX="0dp"></View>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/emergancy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/my_state"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="6dp"
+            android:text="나의\n건강수치"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:background="@drawable/green_button"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"></Button>
+
+        <Button
+            android:id="@+id/btn_Medication"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="6dp"
+            android:text="약\n복용알림"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:background="@drawable/green_button"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"></Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/hospital_resv"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_margin="6dp"
+            android:text="병원예약"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            android:background="@drawable/green_button"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"></Button>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/emergancy"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="긴급신고"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="8dp"
+            tools:ignore="MissingConstraints"
+            android:background="@drawable/pink_button"
+            android:textColor="#FA71CD"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

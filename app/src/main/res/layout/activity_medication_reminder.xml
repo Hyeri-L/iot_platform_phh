@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="약 복용 알림"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아침 약 복용 알림"
+        android:layout_marginLeft="8dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/morningtime"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:text="알람이 설정되지 않았습니다."
+            android:layout_margin="8dp"
+            />
+        <Button
+            android:id="@+id/button_timepicker_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="변경"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="점심 약 복용 알림"
+        android:layout_marginLeft="8dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/lunchtime"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:text="알람이 설정되지 않았습니다."
+            android:layout_margin="8dp"
+            />
+        <Button
+            android:id="@+id/button_timepicker_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="변경"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저녁 약 복용 알림"
+        android:layout_marginLeft="8dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/dinertime"
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:textSize="30sp"
+            android:text="알람이 설정되지 않았습니다."
+            android:layout_margin="8dp"
+            />
+        <Button
+            android:id="@+id/button_timepicker_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="변경"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel alarm"
+        android:layout_below="@+id/button_timepicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        />
+
+
+</LinearLayout>
